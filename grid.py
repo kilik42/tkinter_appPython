@@ -17,12 +17,14 @@ root = Tk()
 
 e = Entry(root, width=50,borderwidth= 5)
 e.pack()
+e.insert(0,"enter your name")
 
 
 
 
 def myClick():
-    myLabel1 = Label(root, text=e.get())
+    hello = " hello " + e.get()
+    myLabel1 = Label(root, text=hello)
     myLabel1.pack()
 
 
